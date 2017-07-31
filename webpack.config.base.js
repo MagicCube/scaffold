@@ -8,6 +8,10 @@ const ASSETS_PUBLIC_PATH = '/assets/';
 
 module.exports = {
   context: SRC_PATH,
+  entry: {
+    app: './app',
+    vendor: './vendor',
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -75,10 +79,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  stats: {
-    children: false,
-    maxModules: 0
   },
   plugins: [
     new CleanWebpackPlugin(
