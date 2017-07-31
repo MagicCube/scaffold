@@ -1,0 +1,50 @@
+@import './variables.less';
+
+:global {
+  body {
+    color: @textColor;
+    background: @bodyBg;
+    font-family: @fontFamilyBase;
+    font-size: @fontFamilyBase;
+    line-height: @lineHeightBase;
+  }
+
+  a {
+    color: @linkColor;
+    text-decoration: none;
+
+    &:hover {
+      color: @linkHoverColor;
+      text-decoration: underline;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+    line-height: @lineHeightBase;
+  }
+
+  h1 {
+    font-size: @fontSizeH1;
+  }
+
+  h2 {
+    font-size: @fontSizeH2;
+  }
+
+  h3 {
+    font-size: @fontSizeH3;
+  }
+
+  h4 {
+    font-size: @fontSizeH4;
+  }
+
+  h5 {
+    font-size: @fontSizeH5;
+  }
+}
