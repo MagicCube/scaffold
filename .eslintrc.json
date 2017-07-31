@@ -24,6 +24,7 @@
     "no-use-before-define": "warn",
     "react/forbid-prop-types": "warn",
     "react/no-unused-prop-types": "warn",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/self-closing-comp": "warn"
   }
 }
