@@ -56,7 +56,7 @@ Object.keys(config.entry).forEach((key) => {
   if (key !== 'vendor') {
     config.entry[key].unshift(
       'react-hot-loader/patch',
-      'webpack-hot-middleware/client?quiet=false'
+      'webpack-hot-middleware/client?quiet=true'
     );
   }
 });
