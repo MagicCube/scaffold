@@ -1,0 +1,19 @@
+{
+  "name": "scaffold",
+  "version": "1.0.0",
+  "description": "My personal front-end template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicCube/scaffold.git"
+  },
+  "author": "Henry Li <henry1943@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MagicCube/scaffold/issues"
+  },
+  "homepage": "https://github.com/MagicCube/scaffold#readme"
+}
