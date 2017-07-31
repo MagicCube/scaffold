@@ -1,17 +1,18 @@
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
-const CLIENT_SRC_ROOT = path.resolve('./src');
-const CLIENT_ASSETS_BUILD_PATH = path.resolve('./build/assets');
-const CLIENT_ASSETS_PUBLIC_PATH = '/assets/';
+const SRC_PATH = path.resolve('./src');
+const ASSETS_BUILD_PATH = path.resolve('./build/assets');
+const ASSETS_PUBLIC_PATH = '/assets/';
 
 module.exports = {
-  context: CLIENT_SRC_ROOT,
+  context: SRC_PATH,
   resolve: {
     extensions: ['.js', '.jsx']
   },
   output: {
-    path: CLIENT_ASSETS_BUILD_PATH,
-    publicPath: CLIENT_ASSETS_PUBLIC_PATH,
+    path: ASSETS_BUILD_PATH,
+    publicPath: ASSETS_PUBLIC_PATH,
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
@@ -33,5 +34,11 @@ module.exports = {
   stats: {
     children: false,
     maxModules: 0
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(
+      ['build/assets'],
+      { root: path.resolve('./'), verbose: true }
+    )
+  ]
 };
