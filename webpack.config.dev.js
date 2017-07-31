@@ -30,7 +30,7 @@ config.module.rules.push(
         options: {
           modules: true,
           sourceMap: true,
-          localIdentName: '[name]-[local]'
+          localIdentName: '[path]-[local]'
         }
       },
       'less-loader'
