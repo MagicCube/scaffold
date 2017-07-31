@@ -1,3 +1,4 @@
+import { AppContainer } from 'react-hot-loader';
 import React from 'react';
 import ReactDom from 'react-dom';
 
@@ -8,14 +9,18 @@ import './index.less';
 function renderMountPoint() {
   ReactDom.render(
     (
-      <App />
+      <AppContainer>
+        <App />
+      </AppContainer>
     ),
     document.getElementById('mount-point')
   );
 }
 
 if (module.hot) {
-  module.hot.accept('./components/App', renderMountPoint);
+  module.hot.accept('./components/App', () => {
+    renderMountPoint();
+  });
 }
 
 renderMountPoint();
