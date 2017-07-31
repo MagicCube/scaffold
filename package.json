@@ -4,7 +4,8 @@
   "description": "My personal front-end template.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/MagicCube/scaffold/issues"
   },
-  "homepage": "https://github.com/MagicCube/scaffold#readme"
+  "homepage": "https://github.com/MagicCube/scaffold#readme",
+  "dependencies": {
+    "cross-env": "^5.0.1"
+  },
+  "devDependencies": {
+
+  }
 }
