@@ -7,6 +7,7 @@ My personal front-end / node-full-stack template.
 
 ### Client-side Packages
 
+* axios
 * babel, es2015, stage-0
 * class-names
 * eslint
