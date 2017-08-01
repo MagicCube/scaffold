@@ -17,6 +17,15 @@
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "max-len": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
     "no-else-return": "warn",
     "no-param-reassign": "warn",
     "no-underscore-dangle": "off",
