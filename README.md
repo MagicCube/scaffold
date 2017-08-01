@@ -7,12 +7,12 @@ My personal front-end / node-full-stack template.
 
 ### Client-side Packages
 
-* babel
+* babel, es2015, stage-0
 * class-names
 * eslint
 * normalize.css
-* react
-* redux
+* react, react-dom
+* redux, redux-actions, redux-promise, react-redux
 * webpack
 
 ### Server-side Packages
