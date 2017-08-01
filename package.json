@@ -36,6 +36,7 @@
     "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
+    "ejs": "^2.5.7",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-loader": "^1.9.0",
