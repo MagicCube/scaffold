@@ -20,6 +20,7 @@
   "homepage": "https://github.com/MagicCube/scaffold#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-polyfill": "^6.23.0",
     "class-names": "^1.0.0",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",

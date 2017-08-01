@@ -1,4 +1,5 @@
 import 'axios';
+import 'babel-polyfill';
 import 'class-names';
 import 'react-dom';
 import 'react-redux';
