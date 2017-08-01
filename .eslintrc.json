@@ -25,6 +25,7 @@
     "react/forbid-prop-types": "warn",
     "react/no-unused-prop-types": "warn",
     "react/prefer-stateless-function": "off",
+    "react/prop-types": "warn",
     "react/self-closing-comp": "warn"
   }
 }
