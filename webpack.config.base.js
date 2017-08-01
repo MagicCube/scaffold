@@ -9,7 +9,7 @@ const ASSETS_PUBLIC_PATH = '/assets/';
 module.exports = {
   context: SRC_PATH,
   entry: {
-    app: './app',
+    abc: './abc',
     vendor: './vendor',
   },
   resolve: {
