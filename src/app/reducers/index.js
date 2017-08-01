@@ -7,10 +7,15 @@ const initialState = {
 };
 
 export default handleActions({
-  [actions.hello](state, { payload: { message } }) {
-    return {
-      ...state,
-      message
-    };
+  [actions.hello](state, { error, payload }) {
+    if (!error) {
+      return {
+        ...state,
+        message: payload.message
+      };
+    } else {
+      console.error(payload);
+      return state;
+    }
   }
 }, initialState);
