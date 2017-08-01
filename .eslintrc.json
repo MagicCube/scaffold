@@ -26,8 +26,8 @@
         ]
       }
     ],
-    "no-else-return": "warn",
-    "no-param-reassign": "warn",
+    "no-else-return": "off",
+    "no-param-reassign": "off",
     "no-underscore-dangle": "off",
     "no-unused-vars": "warn",
     "no-use-before-define": "warn",
