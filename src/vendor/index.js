@@ -1,3 +1,4 @@
+import 'axios';
 import 'class-names';
 import 'react-dom';
 import 'react-redux';
